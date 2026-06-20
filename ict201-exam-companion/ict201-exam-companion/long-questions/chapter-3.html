@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 3 Long Questions — INCT-201</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <span class="code">INCT-201</span>
+      <span class="title">Exam Companion</span>
+    </div>
+    <nav class="topnav">
+      <a href="../index.html">Home</a>
+      <a href="../notes/chapter-3.html">Notes</a>
+      <a href="../short-questions/chapter-3.html">Short Qs</a>
+      <a href="chapter-3.html" class="active">Long Qs</a>
+      <a href="../mcqs/chapter-3.html">MCQs</a>
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">Home</a> / Chapter 03 / Long Questions</div>
+    <h1>Chapter 3 — Long Questions (10 Marks)</h1>
+    <p class="sub">6 most important long/detailed questions on Networking &amp; The Internet.</p>
+
+    <div class="tabs">
+      <a href="../notes/chapter-3.html">Notes</a>
+      <a href="../short-questions/chapter-3.html">Short Questions</a>
+      <a href="chapter-3.html" class="active">Long Questions</a>
+      <a href="../mcqs/chapter-3.html">MCQs</a>
+    </div>
+    <div class="chapter-switch">
+      <a href="chapter-1.html">Chapter 1</a>
+      <a href="chapter-2.html">Chapter 2</a>
+      <a href="chapter-3.html" class="active">Chapter 3</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap" style="padding:28px 0 70px;">
+
+  <div class="toolbar">
+    <input type="search" id="qSearch" placeholder="Search questions by keyword…">
+    <button class="btn" id="expandAll">Expand all</button>
+    <button class="btn" id="collapseAll">Collapse all</button>
+  </div>
+
+  <div class="q-card" data-id="lq1">
+    <div class="q-head"><div class="q-text"><span class="q-num">Q1.</span>Discuss in detail the various communication media — both cables and wireless — used in data communication.</div><span class="marks">10 Marks</span><span class="q-toggle">▼ show answer</span></div>
+    <div class="q-answer">
+      <h4>Cables</h4>
+      <ul>
+        <li><strong>Twisted Pair:</strong> Two insulated copper wires twisted together; cheap and common in LANs and telephone lines, but limited in distance and speed.</li>
+        <li><strong>Coaxial Cable:</strong> A central conductor wrapped in shielding, offering better interference resistance; historically used for cable TV and early networks.</li>
+        <li><strong>Fiber Optic Cable:</strong> Transmits data as light pulses through glass/plastic strands — the fastest medium, immune to electrical interference, used for internet backbones and long-distance links.</li>
+      </ul>
+      <h4>Wireless Media</h4>
+      <ul>
+        <li><strong>Radio waves:</strong> Travel through the air over long distances, the basis of many wireless systems.</li>
+        <li><strong>Microwave:</strong> Line-of-sight signals for long-distance point-to-point links between towers.</li>
+        <li><strong>Satellite:</strong> Relays signals globally via orbiting satellites, useful where cabling is impractical.</li>
+        <li><strong>Infrared:</strong> Very short-range, line-of-sight signals, e.g. remote controls.</li>
+        <li><strong>Bluetooth:</strong> Short-range connections between nearby personal devices.</li>
+        <li><strong>Wi-Fi:</strong> Wireless local area networking — the wireless equivalent of a LAN.</li>
+      </ul>
+      <p>Organisations typically combine wired media for stable, high-capacity backbones with wireless media for flexible, mobile access at the edges of the network.</p>
+    </div>
+  </div>
+
+  <div class="q-card" data-id="lq2">
+    <div class="q-head"><div class="q-text"><span class="q-num">Q2.</span>Explain in detail the three network topologies — Star, Bus, and Ring — including their advantages and disadvantages.</div><span class="marks">10 Marks</span><span class="q-toggle">▼ show answer</span></div>
+    <div class="q-answer">
+      <h4>Star Topology</h4>
+      <p>All devices connect to one central hub or switch. <strong>Advantage:</strong> easy to manage and a single cable fault doesn't bring down the whole network. <strong>Disadvantage:</strong> if the central hub itself fails, the entire network goes down.</p>
+      <h4>Bus Topology</h4>
+      <p>All devices share a single common backbone cable. <strong>Advantage:</strong> simple and inexpensive to set up. <strong>Disadvantage:</strong> a break anywhere in the main cable disrupts the entire network, and performance degrades as more devices are added.</p>
+      <h4>Ring Topology</h4>
+      <p>Each device connects to exactly two neighbouring devices, forming a closed loop through which data travels in an organised path. <strong>Advantage:</strong> predictable, orderly data flow. <strong>Disadvantage:</strong> a single broken connection can disrupt the whole ring, unless a dual-ring design is used for redundancy.</p>
+      <p>In practice, the choice of topology depends on the trade-off an organisation is willing to make between cost, ease of management, and fault tolerance.</p>
+    </div>
+  </div>
+
+  <div class="q-card" data-id="lq3">
+    <div class="q-head"><div class="q-text"><span class="q-num">Q3.</span>Differentiate between LAN and WAN in detail, with examples.</div><span class="marks">10 Marks</span><span class="q-toggle">▼ show answer</span></div>
+    <div class="q-answer">
+      <p>A <strong>Local Area Network (LAN)</strong> covers a small geographic area, such as a single building, office, or school campus. LANs typically offer high transfer speeds at relatively low cost, since the short distances involved make high-quality cabling affordable, and they are usually owned and managed entirely by a single organisation.</p>
+      <p>A <strong>Wide Area Network (WAN)</strong> spans a much larger geographic area — connecting cities, countries, or even continents — typically by linking multiple LANs together through third-party infrastructure such as telecom backbones or satellite links. WANs are generally slower and more expensive per unit of data than LANs, due to the much greater distances and infrastructure involved, and they often involve multiple owners/operators rather than a single organisation.</p>
+      <p>The clearest real-world example of the relationship between the two is the <strong>Internet</strong> itself — a vast WAN formed by interconnecting countless individual LANs across the globe.</p>
+    </div>
+  </div>
+
+  <div class="q-card" data-id="lq4">
+    <div class="q-head"><div class="q-text"><span class="q-num">Q4.</span>Discuss in detail the history of the Internet, including the role of ARPANET and the invention of the World Wide Web.</div><span class="marks">10 Marks</span><span class="q-toggle">▼ show answer</span></div>
+    <div class="q-answer">
+      <h4>Origins: ARPANET</h4>
+      <p>The Internet's roots trace back to <strong>ARPANET</strong>, a project funded in the late 1960s by the U.S. Advanced Research Projects Agency (ARPA). Its goals were to let research computers across different institutions communicate with one another and to build a communication network resilient enough to survive partial failures — an important consideration during the Cold War era.</p>
+      <p>The first node of ARPANET — its "birthplace" — was installed at <strong>UCLA (University of California, Los Angeles)</strong> in 1969, soon followed by additional nodes at other research universities.</p>
+      <h4>Standardisation: TCP/IP</h4>
+      <p>Throughout the 1970s, ARPANET grew steadily, and in <strong>1983</strong> it formally adopted <strong>TCP/IP</strong> as its standard communication protocol. This was a turning point — TCP/IP allowed many independently operated networks to interconnect reliably, effectively creating the technical foundation of what we now call "the Internet."</p>
+      <h4>Public Accessibility: The World Wide Web</h4>
+      <p>For its first two decades, the Internet remained largely a tool for researchers and the military. This changed when <strong>Tim Berners-Lee</strong> invented the <strong>World Wide Web</strong> around 1989–91 — a system of hyperlinked documents that could be navigated through a browser. The Web gave ordinary people an intuitive way to access and share information, sparking the Internet's explosive growth into the global, public information system used today.</p>
+    </div>
+  </div>
+
+  <div class="q-card" data-id="lq5">
+    <div class="q-head"><div class="q-text"><span class="q-num">Q5.</span>Explain in detail the functions and features of a web browser, and differentiate between an ISP and an OSP.</div><span class="marks">10 Marks</span><span class="q-toggle">▼ show answer</span></div>
+    <div class="q-answer">
+      <h4>Functions &amp; Features of a Browser</h4>
+      <p>A browser is the software application used to access, request, and display content from the World Wide Web. Its core functions and features include:</p>
+      <ul>
+        <li><strong>Rendering</strong> — interpreting HTML, CSS, and JavaScript to display a usable, interactive page.</li>
+        <li><strong>Address bar</strong> — for typing or viewing the current page's URL.</li>
+        <li><strong>Tabs</strong> — allowing multiple pages to be open and switched between at once.</li>
+        <li><strong>Bookmarks/Favourites</strong> — saving frequently visited pages for quick future access.</li>
+        <li><strong>History &amp; navigation</strong> — back/forward buttons and a record of previously visited pages.</li>
+        <li><strong>Extensions &amp; security features</strong> — add-ons for extra functionality, and indicators (such as the HTTPS lock icon) showing a connection is secure.</li>
+      </ul>
+      <h4>ISP vs OSP</h4>
+      <p>An <strong>Internet Service Provider (ISP)</strong> supplies users with raw access/connectivity to the Internet, typically for a subscription fee — for example, a broadband or mobile data provider.</p>
+      <p>An <strong>Online Service Provider (OSP)</strong> goes a step further by offering specific, curated online content or services, sometimes bundled together with connectivity — historically exemplified by services like AOL, which combined internet access with its own proprietary content, community features, and communication tools.</p>
+    </div>
+  </div>
+
+  <div class="q-card" data-id="lq6">
+    <div class="q-head"><div class="q-text"><span class="q-num">Q6.</span>Discuss in detail how search engines work, and explain the common services available on the Internet.</div><span class="marks">10 Marks</span><span class="q-toggle">▼ show answer</span></div>
+    <div class="q-answer">
+      <h4>How Search Engines Work</h4>
+      <p>A search engine such as Google or Bing helps users locate information across the vast, unorganised expanse of the web through three broad stages:</p>
+      <ol>
+        <li><strong>Crawling</strong> — automated programs called bots (or spiders) continuously scan and follow links across web pages to discover new and updated content.</li>
+        <li><strong>Indexing</strong> — discovered pages are analysed and stored in a massive, structured database, organised so relevant pages can be retrieved quickly.</li>
+        <li><strong>Ranking</strong> — when a user submits a query, an algorithm evaluates indexed pages against many relevance signals and orders the results before displaying them.</li>
+      </ol>
+      <h4>Common Internet Services</h4>
+      <ul>
+        <li><strong>E-mail</strong> — sending and receiving electronic messages.</li>
+        <li><strong>World Wide Web (WWW)</strong> — browsing hyperlinked pages and resources.</li>
+        <li><strong>FTP</strong> — transferring files between computers.</li>
+        <li><strong>Social media</strong> — sharing content and connecting with others online.</li>
+        <li><strong>Video conferencing</strong> — real-time audio/video communication.</li>
+        <li><strong>Cloud storage</strong> — storing and accessing files remotely over the internet.</li>
+        <li><strong>E-commerce</strong> — buying and selling goods/services online.</li>
+        <li><strong>VoIP &amp; Instant Messaging</strong> — voice calls and text chat carried as internet data rather than traditional telephony.</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>INCT-201 · Chapter 3 Long Questions</div>
+    <div><a href="../index.html">← Back to Home</a></div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+ICT201.initQACards("ch3", "long");
+ICT201.initSearch("qSearch", ".q-card");
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 3 MCQs · Networking & The Internet — INCT-201</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <span class="code">INCT-201</span>
+      <span class="title">Exam Companion</span>
+    </div>
+    <nav class="topnav">
+      <a href="../index.html">Home</a>
+      <a href="../notes/chapter-3.html">Notes</a>
+      <a href="../short-questions/chapter-3.html">Short Qs</a>
+      <a href="../long-questions/chapter-3.html">Long Qs</a>
+      <a href="chapter-3.html" class="active">MCQs</a>
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">Home</a> / Chapter 03 / MCQs</div>
+    <h1>Chapter 3 — MCQ Bank</h1>
+    <p class="sub">33 most important objective questions on Networking &amp; The Internet.</p>
+
+    <div class="tabs">
+      <a href="../notes/chapter-3.html">Notes</a>
+      <a href="../short-questions/chapter-3.html">Short Questions</a>
+      <a href="../long-questions/chapter-3.html">Long Questions</a>
+      <a href="chapter-3.html" class="active">MCQs</a>
+    </div>
+    <div class="chapter-switch">
+      <a href="chapter-1.html">Chapter 1</a>
+      <a href="chapter-2.html">Chapter 2</a>
+      <a href="chapter-3.html" class="active">Chapter 3</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap" style="padding:28px 0 70px;">
+
+  <div id="scoreBar" class="score-bar">
+    <div class="sc">Attempted: <b class="attempted">0</b>/<span class="total">33</span></div>
+    <div class="sc">Correct: <b class="correct">0</b></div>
+    <div class="sc">Accuracy: <b class="pct">0%</b></div>
+    <button class="btn" id="resetQuiz">↺ Restart</button>
+  </div>
+
+  <div class="toolbar">
+    <input type="search" id="mcqSearch" placeholder="Search this chapter's MCQs by keyword…">
+  </div>
+
+  <div id="mcqContainer"></div>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>INCT-201 · Chapter 3 MCQs</div>
+    <div><a href="../index.html">← Back to Home</a></div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/quiz-engine.js"></script>
+<script>
+const chapter3MCQs = [
+  {q:"Which communication medium transmits data as pulses of light through glass or plastic strands?", options:["Twisted pair cable","Coaxial cable","Fiber optic cable","Infrared"], correct:2, explain:"Fiber optic cable carries light signals, offering the highest speed and immunity to electrical interference.", topic:"Cables"},
+  {q:"Twisted pair cable is most commonly associated with:", options:["Satellite links","LANs and telephone lines","Fiber backbones only","Microwave towers"], correct:1, explain:"Twisted pair is the cheap, common cabling used in office LANs and traditional telephone lines.", topic:"Cables"},
+  {q:"Coaxial cable's central copper conductor is surrounded by:", options:["Nothing at all","Shielding that reduces interference","A layer of fiber glass","A wireless antenna"], correct:1, explain:"The shielding layer in coaxial cable gives it better interference resistance than twisted pair.", topic:"Cables"},
+  {q:"Which wireless medium is used for very short-range, line-of-sight signals, such as TV remote controls?", options:["Satellite","Microwave","Infrared","Wi-Fi"], correct:2, explain:"Infrared requires a direct line of sight and works only over a short distance.", topic:"Wireless Media"},
+  {q:"Which wireless technology is used to connect nearby personal devices, such as wireless earphones to a phone?", options:["Satellite","Bluetooth","Microwave","Coaxial"], correct:1, explain:"Bluetooth is designed for short-range communication between personal devices.", topic:"Wireless Media"},
+  {q:"Wi-Fi is best described as:", options:["A type of fiber optic cable","Wireless local area networking","A satellite-only technology","A type of computer virus"], correct:1, explain:"Wi-Fi provides the wireless equivalent of a local area network (LAN).", topic:"Wireless Media"},
+  {q:"A satellite communication link is particularly useful when:", options:["Two devices are in the same room","Laying physical cable is impractical, such as for remote or global coverage","Only short-range transfer is needed","No signal needs to travel at all"], correct:1, explain:"Satellites relay signals globally where ground cabling would be too costly or impossible.", topic:"Wireless Media"},
+  {q:"A protocol, in networking, is best defined as:", options:["A type of cable","A physical network device","A set of agreed rules governing data communication","A search engine algorithm"], correct:2, explain:"Protocols are the rules that let different systems communicate reliably with one another.", topic:"Protocols"},
+  {q:"Which protocol suite forms the foundational addressing and delivery system of the Internet?", options:["HTTP","FTP","TCP/IP","SMTP only"], correct:2, explain:"TCP/IP is the core protocol suite underlying all internet communication.", topic:"Protocols"},
+  {q:"HTTP primarily governs:", options:["How files are transferred between computers","How web pages are requested and delivered between browser and server","How emails are sent","How disks are formatted"], correct:1, explain:"HTTP (and HTTPS) is the protocol browsers and web servers use to exchange web content.", topic:"Protocols"},
+  {q:"FTP is mainly used for:", options:["Sending emails","Transferring files between computers over a network","Browsing social media","Ranking search results"], correct:1, explain:"FTP (File Transfer Protocol) is specifically designed for moving files between systems.", topic:"Protocols"},
+  {q:"In a Star network topology, all devices connect to:", options:["Each other directly, with no central point","One central hub or switch","A single shared backbone cable only","A satellite in orbit"], correct:1, explain:"Star topology routes all traffic through one central connecting device.", topic:"Topologies"},
+  {q:"The main weakness of a Star topology is that:", options:["It is impossible to set up","If the central hub fails, the entire network goes down","It cannot support more than two devices","It has no central point at all"], correct:1, explain:"Since every device depends on the hub, the hub becomes a single point of failure.", topic:"Topologies"},
+  {q:"In a Bus topology, all devices are connected to:", options:["A single shared backbone cable","Their own individual central hub","Each other only in pairs","A satellite uplink"], correct:0, explain:"Bus topology runs all devices off one shared cable, the network's backbone.", topic:"Topologies"},
+  {q:"A key disadvantage of Bus topology is that:", options:["It always needs a central hub","A break anywhere in the main cable can disrupt the entire network","It cannot be installed cheaply","It requires fiber optic cable only"], correct:1, explain:"Since all devices share one cable, a single break can take down the whole network.", topic:"Topologies"},
+  {q:"In a Ring topology, each device is connected to:", options:["Every other device directly","Exactly two neighbouring devices, forming a closed loop","A single central hub","No other device at all"], correct:1, explain:"Ring topology forms a continuous loop where each node links to exactly two neighbours.", topic:"Topologies"},
+  {q:"LAN stands for:", options:["Large Area Network","Local Area Network","Limited Access Node","Linked Area Node"], correct:1, explain:"LAN = Local Area Network, confined to a small geographic area like one building.", topic:"LAN & WAN"},
+  {q:"A WAN typically covers:", options:["A single room","A single building only","A large geographic area such as cities or countries","No area at all"], correct:2, explain:"WANs span much larger distances than LANs, often connecting multiple LANs together.", topic:"LAN & WAN"},
+  {q:"Which of the following best exemplifies a WAN?", options:["A home Wi-Fi network","A single office network","The Internet itself","A Bluetooth connection between two phones"], correct:2, explain:"The Internet connects networks across the entire globe — the largest WAN in existence.", topic:"LAN & WAN"},
+  {q:"ARPANET, the precursor to the modern Internet, was originally funded by:", options:["A private telecom company","The U.S. Advanced Research Projects Agency (ARPA)","A university student club","An international search engine company"], correct:1, explain:"ARPA (part of the U.S. Department of Defense) funded the original ARPANET project.", topic:"Internet History"},
+  {q:"The first node of ARPANET — often called its 'birthplace' — was established at:", options:["Harvard University","Stanford University","UCLA (University of California, Los Angeles)","MIT"], correct:2, explain:"UCLA hosted the very first ARPANET node, installed in 1969.", topic:"Internet History"},
+  {q:"ARPANET adopted which protocol in 1983, laying the technical foundation of today's Internet?", options:["HTTP","FTP","TCP/IP","SMTP"], correct:2, explain:"The 1983 switch to TCP/IP standardised how all connected networks communicated.", topic:"Internet History"},
+  {q:"The World Wide Web, which made the Internet broadly accessible through hyperlinked pages, was invented by:", options:["Bill Gates","Tim Berners-Lee","Steve Jobs","Mark Zuckerberg"], correct:1, explain:"Tim Berners-Lee created the World Wide Web around 1989–91.", topic:"Internet History"},
+  {q:"A 'web link' (hyperlink) is best described as:", options:["A type of computer virus","A clickable reference that takes the user to another page or resource","A wireless connection type","A search engine ranking factor"], correct:1, explain:"Hyperlinks are the clickable connections that let users navigate between web resources.", topic:"Browsers"},
+  {q:"Which of the following is NOT typically a feature of a web browser?", options:["Address bar","Bookmarks","Tabs","Hard disk formatting"], correct:3, explain:"Formatting a hard disk is an operating system/disk utility function, not a browser feature.", topic:"Browsers"},
+  {q:"The browser feature that lets a user save frequently visited pages for quick access later is called:", options:["Cache clearing","Bookmarks / Favourites","Incognito mode","Pop-up blocking"], correct:1, explain:"Bookmarks let users store links to pages they want to revisit easily.", topic:"Browsers"},
+  {q:"An Internet Service Provider (ISP) primarily provides:", options:["Curated entertainment content only","Access and connectivity to the Internet","Search engine ranking services","Computer hardware repair"], correct:1, explain:"An ISP's core role is supplying a connection to the internet, typically for a fee.", topic:"ISP & OSP"},
+  {q:"An Online Service Provider (OSP) is best distinguished from a plain ISP by:", options:["Never providing internet access of any kind","Offering curated content/services, sometimes bundled with connectivity","Charging no fees whatsoever","Operating exclusively offline"], correct:1, explain:"OSPs (like the historical AOL) combine specific content/services with — or alongside — connectivity.", topic:"ISP & OSP"},
+  {q:"The first stage in how a search engine builds its results database is called:", options:["Ranking","Indexing","Crawling","Browsing"], correct:2, explain:"Crawling is the automated process of scanning web pages across the internet.", topic:"Search Engines"},
+  {q:"The process of storing and organising discovered web pages into a searchable database is called:", options:["Crawling","Indexing","Streaming","Mirroring"], correct:1, explain:"Indexing organises crawled pages so they can be retrieved quickly during a search.", topic:"Search Engines"},
+  {q:"When a user submits a query, a search engine uses _____ to order the results by relevance.", options:["A ranking algorithm","A backup system","A RAID array","A modem"], correct:0, explain:"Ranking algorithms decide which results are shown first based on relevance signals.", topic:"Search Engines"},
+  {q:"Which internet service is specifically used for real-time audio and video communication?", options:["FTP","Video conferencing","Magnetic tape backup","OMR"], correct:1, explain:"Video conferencing tools (e.g. Zoom, Google Meet) enable live audio/video calls over the internet.", topic:"Internet Services"},
+  {q:"VoIP allows users to:", options:["Store files in the cloud","Make voice calls over the internet instead of traditional phone lines","Scan barcodes automatically","Format a hard disk remotely"], correct:1, explain:"VoIP (Voice over Internet Protocol) carries voice calls as internet data rather than traditional telephony signals.", topic:"Internet Services"}
+];
+renderMCQs("mcqContainer", chapter3MCQs, "ch3");
+ICT201.initSearch("mcqSearch", ".mcq-card");
+</script>
+</body>
+</html>
