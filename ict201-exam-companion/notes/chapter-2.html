@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 2 Notes · I/O, Storage & Data Communication — INCT-201</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <span class="code">INCT-201</span>
+      <span class="title">Exam Companion</span>
+    </div>
+    <nav class="topnav">
+      <a href="../index.html">Home</a>
+      <a href="chapter-2.html" class="active">Notes</a>
+      <a href="../short-questions/chapter-2.html">Short Qs</a>
+      <a href="../long-questions/chapter-2.html">Long Qs</a>
+      <a href="../mcqs/chapter-2.html">MCQs</a>
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">Home</a> / Chapter 02 / Notes</div>
+    <h1>I/O Devices, Storage &amp; Data Communication</h1>
+    <p class="sub">Input/output hardware, memory &amp; storage technology, and how data physically travels between machines.</p>
+
+    <div class="tabs">
+      <a href="chapter-2.html" class="active">Notes</a>
+      <a href="../short-questions/chapter-2.html">Short Questions</a>
+      <a href="../long-questions/chapter-2.html">Long Questions</a>
+      <a href="../mcqs/chapter-2.html">MCQs</a>
+    </div>
+    <div class="chapter-switch">
+      <a href="chapter-1.html">Chapter 1</a>
+      <a href="chapter-2.html" class="active">Chapter 2</a>
+      <a href="chapter-3.html">Chapter 3</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap content-shell">
+
+  <aside class="toc">
+    <div class="toc-label">On this page</div>
+    <ol>
+      <li><a href="#keyboard-terminal">1. Keyboard &amp; Terminal Types</a></li>
+      <li><a href="#dde-sda">2. Dedicated Data Entry, SDA, Pointing &amp; Voice Input</a></li>
+      <li><a href="#output-monitors">3. Output Devices &amp; Monitors</a></li>
+      <li><a href="#printers-plotters">4. Printers &amp; Plotters</a></li>
+      <li><a href="#virus-security">5. Computer Virus &amp; Security</a></li>
+      <li><a href="#storage-units">6. Storage Units: Primary &amp; Secondary Memory</a></li>
+      <li><a href="#ram-cache">7. RAM Types &amp; Cache Memory</a></li>
+      <li><a href="#disks-raid">8. Hard Disks, Diskettes &amp; RAID</a></li>
+      <li><a href="#optical-backup">9. Optical/Magnetic Storage &amp; Backup</a></li>
+      <li><a href="#data-comm">10. Data Communication &amp; Its Model</a></li>
+      <li><a href="#transmission">11. Digital/Analog Transmission &amp; Modems</a></li>
+      <li><a href="#modes">12. Transmission Modes</a></li>
+    </ol>
+  </aside>
+
+  <main>
+
+    <div class="note-section" id="keyboard-terminal">
+      <h2>1. Keyboard &amp; Terminal Types</h2>
+      <p>The <strong>keyboard</strong> remains the most common input device. Variants include the standard QWERTY layout, ergonomic (split/curved) keyboards designed to reduce strain, and on-screen virtual keyboards on touch devices.</p>
+      <p>A <strong>terminal</strong> is a device used to enter data into, and receive output from, a computer system — historically common with centralized facilities.</p>
+      <table class="compare">
+        <tr><th>Terminal Type</th><th>Processing Ability</th><th>Typical Use</th></tr>
+        <tr><td>Dumb Terminal</td><td>None — only displays input/output</td><td>Pure data entry, entirely dependent on the host computer</td></tr>
+        <tr><td>Smart Terminal</td><td>Limited local processing/editing</td><td>Can validate or format data before sending it</td></tr>
+        <tr><td>Intelligent Terminal</td><td>Full local processing (its own CPU/memory)</td><td>Can run programs independently, e.g. a modern PC acting as a terminal</td></tr>
+      </table>
+    </div>
+
+    <div class="note-section" id="dde-sda">
+      <h2>2. Dedicated Data Entry, SDA, Pointing Devices &amp; Voice Input</h2>
+      <p><strong>Dedicated Data Entry (DDE):</strong> Data is first typed and stored on a separate medium (historically key-to-tape or key-to-disk systems) before being transferred in bulk to the main computer — separating data entry from processing.</p>
+      <p><strong>Source Data Automation (SDA):</strong> Captures data directly and electronically at its point of origin, removing the manual typing step entirely. Common SDA technologies include:</p>
+      <ul>
+        <li><strong>Barcode readers</strong> — scan striped patterns on products.</li>
+        <li><strong>OCR (Optical Character Recognition)</strong> — reads printed text directly.</li>
+        <li><strong>MICR (Magnetic Ink Character Recognition)</strong> — reads the magnetic ink numbers on bank cheques.</li>
+        <li><strong>OMR (Optical Mark Recognition)</strong> — reads pencil-marked bubbles, e.g. exam answer sheets.</li>
+      </ul>
+      <p><strong>Pointing devices</strong> let users interact with on-screen elements: mouse, trackball, touchpad, joystick, stylus, and touchscreen.</p>
+      <p><strong>Voice input</strong> uses speech-recognition software to convert spoken words directly into digital data or commands.</p>
+      <div class="callout exam"><strong>Examiner's Favourite</strong>Questions frequently ask you to "differentiate SDA from manual keyboard entry" — always anchor your answer on accuracy and speed gained by skipping manual transcription.</div>
+    </div>
+
+    <div class="note-section" id="output-monitors">
+      <h2>3. Output Devices &amp; Monitors</h2>
+      <p>Output can be a <strong>soft copy</strong> — a temporary, intangible display (on a monitor or speaker) — or a <strong>hard copy</strong> — a permanent, tangible output (a printed page).</p>
+      <p><strong>Monitors</strong> display soft-copy output. Types include CRT (older, bulky cathode-ray tube), LCD (Liquid Crystal Display, flat and energy-efficient), and LED (LCD with LED backlighting, brighter and slimmer). Monitors are also classified as monochrome or colour, and rated by resolution (the number of pixels they can display).</p>
+    </div>
+
+    <div class="note-section" id="printers-plotters">
+      <h2>4. Printers &amp; Plotters</h2>
+      <table class="compare">
+        <tr><th>Category</th><th>Type</th><th>Mechanism</th></tr>
+        <tr><td>Impact Printers</td><td>Dot Matrix, Daisy Wheel</td><td>Physically strike an inked ribbon against paper — noisy but cheap, good for carbon copies</td></tr>
+        <tr><td>Non-Impact Printers</td><td>Inkjet, Laser, Thermal</td><td>No physical striking — sprays ink, fuses toner with heat, or uses heat-sensitive paper</td></tr>
+      </table>
+      <p>A <strong>plotter</strong> is a specialised output device that draws high-precision line-based graphics (engineering drawings, architectural blueprints, large maps) by moving a pen across paper, rather than building an image from a grid of dots like a printer.</p>
+    </div>
+
+    <div class="note-section" id="virus-security">
+      <h2>5. Computer Virus &amp; Security</h2>
+      <p>A <strong>computer virus</strong> is a malicious program that attaches itself to legitimate files or programs and replicates itself, often damaging data or disrupting normal operation. Common categories include boot-sector viruses, file-infector viruses, macro viruses (hidden inside document macros), and worms (which self-spread across networks without needing a host file).</p>
+      <p><strong>Security measures</strong> include installing updated antivirus software, using firewalls, taking regular backups, applying software patches/updates promptly, and practising safe habits such as avoiding unknown email attachments and untrusted downloads.</p>
+    </div>
+
+    <div class="note-section" id="storage-units">
+      <h2>6. Storage Units: Primary &amp; Secondary Memory</h2>
+      <p>Data is measured in <strong>bits</strong> (binary digit, 0 or 1) and <strong>bytes</strong> (8 bits), scaling up through Kilobyte (KB) → Megabyte (MB) → Gigabyte (GB) → Terabyte (TB).</p>
+      <table class="compare">
+        <tr><th>Memory Type</th><th>Speed</th><th>Volatility</th><th>Example</th></tr>
+        <tr><td>Primary Memory</td><td>Very fast</td><td>Mostly volatile (RAM)</td><td>RAM, ROM, Cache</td></tr>
+        <tr><td>Secondary Memory</td><td>Slower</td><td>Non-volatile</td><td>Hard disk, optical disk, flash drive</td></tr>
+      </table>
+
+      <div class="diagram-card">
+        <div class="diagram-label">Diagram · The Memory Hierarchy</div>
+        <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="250,20 350,20 400,100 200,100" fill="#1F5C50"></polygon>
+          <polygon points="200,100 400,100 450,180 150,180" fill="#2E7D6B"></polygon>
+          <polygon points="150,180 450,180 500,260 100,260" fill="#D9A455"></polygon>
+          <polygon points="100,260 500,260 550,340 50,340" fill="#EDD9B0"></polygon>
+
+          <text x="300" y="56" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Registers</text>
+          <text x="300" y="73" text-anchor="middle" font-size="9.5" fill="#fff" opacity=".85">Fastest · tiniest capacity</text>
+
+          <text x="300" y="135" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Cache</text>
+          <text x="300" y="152" text-anchor="middle" font-size="9.5" fill="#fff" opacity=".85">Very fast · small</text>
+
+          <text x="300" y="215" text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink)">RAM (Primary Memory)</text>
+          <text x="300" y="232" text-anchor="middle" font-size="9.5" fill="var(--ink)" opacity=".75">Fast · volatile</text>
+
+          <text x="300" y="296" text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink)">Secondary Storage</text>
+          <text x="300" y="313" text-anchor="middle" font-size="9.5" fill="var(--ink)" opacity=".75">Slow · large · permanent (Hard Disk, etc.)</text>
+        </svg>
+        <div class="diagram-caption">Top to bottom: speed and cost per byte fall sharply, while capacity rises sharply.</div>
+      </div>
+
+      <p>Primary memory works directly with the CPU for active tasks; secondary memory provides permanent, large-capacity storage that survives a power-off.</p>
+    </div>
+
+    <div class="note-section" id="ram-cache">
+      <h2>7. RAM Types &amp; Cache Memory</h2>
+      <ul>
+        <li><strong>SRAM (Static RAM):</strong> Faster and more expensive; used in cache memory; retains data without needing constant refreshing as long as power is supplied.</li>
+        <li><strong>DRAM (Dynamic RAM):</strong> Slower, cheaper, and needs to be refreshed thousands of times per second; used as a computer's main RAM.</li>
+        <li><strong>SDRAM (Synchronous DRAM):</strong> DRAM synchronised with the system clock for faster, more predictable performance — used in modern PCs.</li>
+      </ul>
+      <p><strong>Cache memory</strong> is a very small, very fast block of memory placed between the CPU and RAM, storing frequently used data/instructions so the CPU doesn't have to wait on slower RAM. It is organised in levels — L1 (smallest, fastest, closest to the CPU core), L2, and L3 (progressively larger but slightly slower).</p>
+    </div>
+
+    <div class="note-section" id="disks-raid">
+      <h2>8. Hard Disks, Diskettes &amp; RAID</h2>
+      <p>A <strong>hard disk</strong> stores data magnetically on one or more spinning circular <strong>platters</strong>. Each platter is divided into concentric <strong>tracks</strong>, and each track into <strong>sectors</strong>. A read/write head moves across the spinning platter to access or store data at the correct track and sector — the closer together these movements happen, the faster the disk performs.</p>
+
+      <div class="diagram-card">
+        <div class="diagram-label">Diagram · Hard Disk Structure</div>
+        <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="200" cy="170" r="140" fill="var(--paper-dim)" stroke="var(--line)" stroke-width="2"></circle>
+          <circle cx="200" cy="170" r="110" fill="none" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="3 5"></circle>
+          <circle cx="200" cy="170" r="80" fill="none" stroke="var(--signal)" stroke-width="3"></circle>
+          <circle cx="200" cy="170" r="50" fill="none" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="3 5"></circle>
+
+          <path d="M264.0,158.72 L293.6,153.51 A95,95 0 0,1 289.2,202.49 L261.1,192.23 A65,65 0 0,0 264.0,158.72 Z" fill="var(--amber)" opacity=".6" stroke="var(--amber)" stroke-width="1"></path>
+
+          <circle cx="200" cy="170" r="8" fill="var(--ink)"></circle>
+
+          <line x1="420" y1="55" x2="256" y2="106" stroke="var(--ink)" stroke-width="2"></line>
+          <rect x="250" y="101" width="11" height="9" rx="1.5" fill="var(--ink)"></rect>
+
+          <text x="200" y="335" text-anchor="middle" font-size="11" class="dg-faint">Platter (spins at high speed)</text>
+
+          <rect x="68" y="362" width="11" height="11" fill="var(--signal)"></rect>
+          <text x="84" y="371" font-size="11.5">Track</text>
+          <rect x="178" y="362" width="11" height="11" fill="var(--amber)"></rect>
+          <text x="194" y="371" font-size="11.5">Sector</text>
+          <rect x="298" y="362" width="11" height="11" fill="var(--ink)"></rect>
+          <text x="314" y="371" font-size="11.5">Read / Write Head</text>
+        </svg>
+        <div class="diagram-caption">The head jumps between tracks; within a track, data is read sector by sector.</div>
+      </div>
+
+      <p>A <strong>diskette (floppy disk)</strong> was an early, low-capacity, portable magnetic storage medium, now obsolete but historically important for transferring small files.</p>
+      <p><strong>RAID (Redundant Array of Independent Disks)</strong> combines multiple physical hard disks into one logical unit to improve performance, reliability, or both — by spreading (striping) data across disks and/or duplicating (mirroring) it, so that data survives even if one disk fails.</p>
+    </div>
+
+    <div class="note-section" id="optical-backup">
+      <h2>9. Optical &amp; Magnetic Storage, Backup Systems</h2>
+      <p><strong>Optical disk storage</strong> (CD-ROM, DVD) stores data as microscopic pits and flats on the disk surface, read by a laser beam that detects changes in reflected light. DVDs hold significantly more data than CDs due to a tighter track spacing and, often, multiple data layers.</p>
+      <p><strong>Magnetic tape</strong> stores data sequentially on a long magnetic strip — slow to access randomly, but extremely cost-effective for storing huge volumes of data, making it a traditional choice for backups and archives.</p>
+      <h3>Backup Systems</h3>
+      <ul>
+        <li><strong>Full backup:</strong> Copies all data every time — simplest to restore from, but slow and storage-heavy.</li>
+        <li><strong>Incremental backup:</strong> Copies only data changed since the last backup (of any type) — fast and storage-efficient.</li>
+        <li><strong>Differential backup:</strong> Copies all data changed since the last full backup — a middle ground between the two.</li>
+      </ul>
+    </div>
+
+    <div class="note-section" id="data-comm">
+      <h2>10. Data Communication &amp; the Communication Model</h2>
+      <p><strong>Data communication</strong> is the exchange of data between two devices via a transmission medium, governed by agreed rules (protocols).</p>
+      <p>The basic <strong>Data Communication Model</strong> involves five elements:</p>
+      <ol>
+        <li><strong>Source</strong> — generates the data to be sent.</li>
+        <li><strong>Transmitter</strong> — converts data into a transmittable signal.</li>
+        <li><strong>Transmission System</strong> — the medium that carries the signal (cable/wireless).</li>
+        <li><strong>Receiver</strong> — converts the incoming signal back into usable data.</li>
+      </ol>
+
+      <div class="diagram-card">
+        <div class="diagram-label">Flowchart · The Data Communication Model</div>
+        <svg viewBox="0 0 980 170" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="dc-arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+              <path d="M0,0 L7,3 L0,6 Z" fill="var(--signal)"></path>
+            </marker>
+          </defs>
+          <line x1="190" y1="80" x2="206" y2="80" stroke="var(--signal)" stroke-width="2" marker-end="url(#dc-arrow)"></line>
+          <line x1="380" y1="80" x2="396" y2="80" stroke="var(--signal)" stroke-width="2" marker-end="url(#dc-arrow)"></line>
+          <line x1="570" y1="80" x2="586" y2="80" stroke="var(--signal)" stroke-width="2" marker-end="url(#dc-arrow)"></line>
+          <line x1="760" y1="80" x2="776" y2="80" stroke="var(--signal)" stroke-width="2" marker-end="url(#dc-arrow)"></line>
+
+          <rect x="20" y="30" width="170" height="100" rx="10" fill="var(--paper-dim)" stroke="var(--line)"></rect>
+          <text x="105" y="75" text-anchor="middle" font-size="13" font-weight="700">Source</text>
+          <text x="105" y="95" text-anchor="middle" font-size="10" class="dg-faint">Generates the data</text>
+
+          <rect x="210" y="30" width="170" height="100" rx="10" fill="var(--signal-dim)" stroke="var(--signal)"></rect>
+          <text x="295" y="70" text-anchor="middle" font-size="13" font-weight="700">Transmitter</text>
+          <text x="295" y="90" text-anchor="middle" font-size="10" class="dg-faint">Converts data into</text>
+          <text x="295" y="104" text-anchor="middle" font-size="10" class="dg-faint">a transmittable signal</text>
+
+          <rect x="400" y="30" width="170" height="100" rx="10" fill="var(--paper-dim)" stroke="var(--line)"></rect>
+          <text x="485" y="70" text-anchor="middle" font-size="13" font-weight="700">Transmission</text>
+          <text x="485" y="85" text-anchor="middle" font-size="13" font-weight="700">System</text>
+          <text x="485" y="104" text-anchor="middle" font-size="10" class="dg-faint">Cable / wireless medium</text>
+
+          <rect x="590" y="30" width="170" height="100" rx="10" fill="var(--signal-dim)" stroke="var(--signal)"></rect>
+          <text x="675" y="70" text-anchor="middle" font-size="13" font-weight="700">Receiver</text>
+          <text x="675" y="90" text-anchor="middle" font-size="10" class="dg-faint">Converts the signal</text>
+          <text x="675" y="104" text-anchor="middle" font-size="10" class="dg-faint">back into data</text>
+
+          <rect x="780" y="30" width="170" height="100" rx="10" fill="var(--amber-dim)" stroke="var(--amber)"></rect>
+          <text x="865" y="75" text-anchor="middle" font-size="13" font-weight="700">Destination</text>
+          <text x="865" y="95" text-anchor="middle" font-size="10" class="dg-faint">Receives the data</text>
+        </svg>
+        <div class="diagram-caption">Every data exchange — an email, a phone call, a web request — follows this same five-step path.</div>
+      </div>
+    </div>
+
+    <div class="note-section" id="transmission">
+      <h2>11. Digital &amp; Analog Transmission, Modems</h2>
+      <p><strong>Digital transmission</strong> sends data as discrete electrical pulses (0s and 1s) — fast and highly resistant to noise/interference, used by modern computer networks.</p>
+      <p><strong>Analog transmission</strong> sends data as a continuously varying wave — used historically by traditional telephone lines, and more prone to signal degradation over distance.</p>
+      <p>A <strong>Modem</strong> ("modulator-demodulator") converts a computer's digital signals into analog signals for transmission over telephone lines, and converts incoming analog signals back into digital form — essential for early dial-up internet connections.</p>
+    </div>
+
+    <div class="note-section" id="modes">
+      <h2>12. Transmission Modes</h2>
+      <table class="compare">
+        <tr><th>Synchronisation</th><th>Description</th></tr>
+        <tr><td>Asynchronous</td><td>Data is sent in small bursts with start/stop bits framing each character; no shared timing clock needed; simpler but less efficient.</td></tr>
+        <tr><td>Synchronous</td><td>Sender and receiver share a timing clock; data flows in a continuous stream without per-character framing; faster and used for bulk transfers.</td></tr>
+      </table>
+      <table class="compare">
+        <tr><th>Direction Mode</th><th>Description</th><th>Example</th></tr>
+        <tr><td>Simplex</td><td>Data flows in one direction only</td><td>Television broadcast, keyboard to CPU</td></tr>
+        <tr><td>Half Duplex</td><td>Data flows both ways, but only one direction at a time</td><td>Walkie-talkie</td></tr>
+        <tr><td>Full Duplex</td><td>Data flows both ways simultaneously</td><td>Telephone call, modern internet connection</td></tr>
+      </table>
+
+      <div class="diagram-card">
+        <div class="diagram-label">Diagram · Simplex vs Half Duplex vs Full Duplex</div>
+        <svg viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="tm-signal" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="var(--signal)"></path>
+            </marker>
+            <marker id="tm-amber" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="var(--amber)"></path>
+            </marker>
+          </defs>
+
+          <!-- Simplex -->
+          <circle cx="60" cy="100" r="20" fill="var(--paper-dim)" stroke="var(--line)" stroke-width="2"></circle>
+          <text x="60" y="105" text-anchor="middle" font-size="12" font-weight="700">A</text>
+          <circle cx="240" cy="100" r="20" fill="var(--paper-dim)" stroke="var(--line)" stroke-width="2"></circle>
+          <text x="240" y="105" text-anchor="middle" font-size="12" font-weight="700">B</text>
+          <line x1="82" y1="100" x2="216" y2="100" stroke="var(--signal)" stroke-width="2.5" marker-end="url(#tm-signal)"></line>
+          <text x="150" y="160" text-anchor="middle" font-size="13" font-weight="700">SIMPLEX</text>
+          <text x="150" y="178" text-anchor="middle" font-size="10" class="dg-faint">One direction only · e.g. TV broadcast</text>
+
+          <!-- Half Duplex -->
+          <circle cx="360" cy="100" r="20" fill="var(--paper-dim)" stroke="var(--line)" stroke-width="2"></circle>
+          <text x="360" y="105" text-anchor="middle" font-size="12" font-weight="700">A</text>
+          <circle cx="540" cy="100" r="20" fill="var(--paper-dim)" stroke="var(--line)" stroke-width="2"></circle>
+          <text x="540" y="105" text-anchor="middle" font-size="12" font-weight="700">B</text>
+          <line x1="382" y1="85" x2="516" y2="85" stroke="var(--amber)" stroke-width="2.5" marker-end="url(#tm-amber)"></line>
+          <line x1="516" y1="115" x2="382" y2="115" stroke="var(--amber)" stroke-width="2.5" marker-end="url(#tm-amber)"></line>
+          <text x="450" y="160" text-anchor="middle" font-size="13" font-weight="700">HALF DUPLEX</text>
+          <text x="450" y="178" text-anchor="middle" font-size="10" class="dg-faint">Both ways, one at a time · e.g. walkie-talkie</text>
+
+          <!-- Full Duplex -->
+          <circle cx="660" cy="100" r="20" fill="var(--paper-dim)" stroke="var(--line)" stroke-width="2"></circle>
+          <text x="660" y="105" text-anchor="middle" font-size="12" font-weight="700">A</text>
+          <circle cx="840" cy="100" r="20" fill="var(--paper-dim)" stroke="var(--line)" stroke-width="2"></circle>
+          <text x="840" y="105" text-anchor="middle" font-size="12" font-weight="700">B</text>
+          <line x1="682" y1="85" x2="816" y2="85" stroke="var(--signal)" stroke-width="2.5" marker-end="url(#tm-signal)"></line>
+          <line x1="816" y1="115" x2="682" y2="115" stroke="var(--signal)" stroke-width="2.5" marker-end="url(#tm-signal)"></line>
+          <text x="750" y="160" text-anchor="middle" font-size="13" font-weight="700">FULL DUPLEX</text>
+          <text x="750" y="178" text-anchor="middle" font-size="10" class="dg-faint">Both ways at once · e.g. phone call</text>
+        </svg>
+        <div class="diagram-caption">The number and timing of arrows is the entire concept — memorise this picture, not just the words.</div>
+      </div>
+
+      <div class="callout exam"><strong>Examiner's Favourite</strong>"Differentiate Simplex, Half Duplex, and Full Duplex with examples" is repeated almost every year — memorise one crisp real-world example for each.</div>
+    </div>
+
+    <hr class="div">
+    <p style="text-align:center;"><a href="../mcqs/chapter-2.html" class="btn primary">Test yourself → Chapter 2 MCQs</a></p>
+
+  </main>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>INCT-201 · Applications of ICT · Chapter 2 of 3</div>
+    <div><a href="chapter-3.html">Next: Chapter 3 Notes →</a></div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>document.addEventListener("DOMContentLoaded", () => ICT201.markNotesVisited("ch2"));</script>
+</body>
+</html>

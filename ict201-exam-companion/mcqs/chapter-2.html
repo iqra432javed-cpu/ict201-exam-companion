@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 2 MCQs · I/O, Storage & Data Communication — INCT-201</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <span class="code">INCT-201</span>
+      <span class="title">Exam Companion</span>
+    </div>
+    <nav class="topnav">
+      <a href="../index.html">Home</a>
+      <a href="../notes/chapter-2.html">Notes</a>
+      <a href="../short-questions/chapter-2.html">Short Qs</a>
+      <a href="../long-questions/chapter-2.html">Long Qs</a>
+      <a href="chapter-2.html" class="active">MCQs</a>
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">Home</a> / Chapter 02 / MCQs</div>
+    <h1>Chapter 2 — MCQ Bank</h1>
+    <p class="sub">33 most important objective questions on I/O Devices, Storage &amp; Data Communication.</p>
+
+    <div class="tabs">
+      <a href="../notes/chapter-2.html">Notes</a>
+      <a href="../short-questions/chapter-2.html">Short Questions</a>
+      <a href="../long-questions/chapter-2.html">Long Questions</a>
+      <a href="chapter-2.html" class="active">MCQs</a>
+    </div>
+    <div class="chapter-switch">
+      <a href="chapter-1.html">Chapter 1</a>
+      <a href="chapter-2.html" class="active">Chapter 2</a>
+      <a href="chapter-3.html">Chapter 3</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap" style="padding:28px 0 70px;">
+
+  <div id="scoreBar" class="score-bar">
+    <div class="sc">Attempted: <b class="attempted">0</b>/<span class="total">33</span></div>
+    <div class="sc">Correct: <b class="correct">0</b></div>
+    <div class="sc">Accuracy: <b class="pct">0%</b></div>
+    <button class="btn" id="resetQuiz">↺ Restart</button>
+  </div>
+
+  <div class="toolbar">
+    <input type="search" id="mcqSearch" placeholder="Search this chapter's MCQs by keyword…">
+  </div>
+
+  <div id="mcqContainer"></div>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>INCT-201 · Chapter 2 MCQs</div>
+    <div><a href="chapter-3.html">Next: Chapter 3 MCQs →</a></div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/quiz-engine.js"></script>
+<script>
+const chapter2MCQs = [
+  {q:"Which terminal type has no local processing ability and depends entirely on the host computer for processing?", options:["Smart terminal","Dumb terminal","Intelligent terminal","Wireless terminal"], correct:1, explain:"A dumb terminal can only display input/output; it cannot process data on its own.", topic:"Terminals"},
+  {q:"An Intelligent terminal differs from a dumb terminal mainly because it:", options:["Cannot display any output","Has its own CPU and memory, allowing it to process data independently","Only works with paper tape","Is always slower than a dumb terminal"], correct:1, explain:"Intelligent terminals contain their own processing hardware and can run programs locally.", topic:"Terminals"},
+  {q:"A Smart terminal is best described as a device that:", options:["Has full independent processing power like a PC","Has limited local processing, such as validating data before sending it","Has no screen at all","Can never connect to a host computer"], correct:1, explain:"Smart terminals sit between dumb and intelligent terminals — some local logic, but not full independence.", topic:"Terminals"},
+  {q:"Dedicated Data Entry (DDE) systems typically:", options:["Process data instantly with no storage step","Store typed data on a separate medium before bulk transfer to the main computer","Eliminate the need for any data entry device","Only work with voice input"], correct:1, explain:"DDE separates the data-entry step from the main processing step, using an intermediate storage medium.", topic:"Data Entry"},
+  {q:"Which Source Data Automation device reads the magnetic ink numbers printed on bank cheques?", options:["OCR","OMR","MICR","Barcode reader"], correct:2, explain:"MICR (Magnetic Ink Character Recognition) is specifically designed for cheque processing.", topic:"SDA"},
+  {q:"OMR (Optical Mark Recognition) technology is most commonly used to read:", options:["Spoken commands","Pencil-marked bubbles on forms, such as exam answer sheets","Magnetic ink on cheques","Barcodes on products"], correct:1, explain:"OMR detects marked positions on a form, widely used for objective exam sheets.", topic:"SDA"},
+  {q:"Scanning a product's striped barcode at checkout is an example of:", options:["Dedicated Data Entry","Source Data Automation","Batch processing only","A type of computer virus"], correct:1, explain:"Barcode scanning captures data directly at its origin — a classic SDA example.", topic:"SDA"},
+  {q:"A telephone call, where both speakers can talk and listen at the same time, is an example of which transmission mode?", options:["Simplex","Half Duplex","Full Duplex","Asynchronous"], correct:2, explain:"Full duplex allows simultaneous two-way communication, exactly like a phone call.", topic:"Transmission Modes"},
+  {q:"Voice input relies on which underlying technology to convert speech into usable data?", options:["Optical Character Recognition","Speech recognition software","Barcode scanning","RAID"], correct:1, explain:"Speech recognition software interprets spoken audio and converts it into digital text/commands.", topic:"Input Devices"},
+  {q:"The key difference between soft copy and hard copy output is that:", options:["Soft copy is permanent and hard copy is temporary","Soft copy is a temporary on-screen display while hard copy is a permanent printed output","They are exactly the same thing","Hard copy only exists on optical disks"], correct:1, explain:"Soft copy disappears when the screen turns off; hard copy is a tangible, lasting printout.", topic:"Output Devices"},
+  {q:"Which monitor technology uses LED backlighting behind an LCD panel?", options:["CRT monitor","LED monitor","Dot matrix monitor","Plotter monitor"], correct:1, explain:"LED monitors are LCD panels that use LEDs specifically for backlighting, improving brightness and slimness.", topic:"Monitors"},
+  {q:"Compared to LCD monitors, CRT monitors are generally:", options:["Slimmer and lighter","Bulkier and consume more power","Impossible to manufacture","Used only for printing"], correct:1, explain:"CRT technology requires a large vacuum tube, making these monitors bulky and power-hungry.", topic:"Monitors"},
+  {q:"Dot Matrix and Daisy Wheel printers both belong to which broad printer category?", options:["Non-impact printers","Impact printers","Optical printers","Plotter category"], correct:1, explain:"Both physically strike an inked ribbon against the paper, classifying them as impact printers.", topic:"Printers"},
+  {q:"Which of the following is a non-impact printer?", options:["Dot Matrix printer","Daisy Wheel printer","Laser printer","None of these"], correct:2, explain:"Laser printers fuse toner onto paper using heat, with no physical striking mechanism.", topic:"Printers"},
+  {q:"A plotter is best suited for producing:", options:["Bulk text documents","High-precision line-based drawings such as engineering or architectural plans","Audio output","Compressed backup files"], correct:1, explain:"Plotters draw continuous lines with a pen, ideal for technical/CAD drawings rather than dot-based images.", topic:"Plotters"},
+  {q:"A malicious program that spreads across a network without needing to attach itself to a host file is called a:", options:["Macro virus","Worm","Boot-sector virus","Modem"], correct:1, explain:"Worms are self-replicating and spread independently across networks, unlike viruses that need a host file.", topic:"Virus & Security"},
+  {q:"A virus hidden inside the macro commands of a document (e.g. a Word file) is called a:", options:["Worm","Macro virus","Trojan modem","File compressor"], correct:1, explain:"Macro viruses exploit the scripting/macro features of office documents to spread.", topic:"Virus & Security"},
+  {q:"Which of the following is NOT a recommended computer security practice?", options:["Taking regular backups","Keeping antivirus software updated","Opening unknown email attachments from strangers","Applying software security patches promptly"], correct:2, explain:"Opening unknown attachments is one of the most common ways malware infects a system.", topic:"Virus & Security"},
+  {q:"Primary memory is generally distinguished from secondary memory by being:", options:["Slower but always permanent","Faster, but typically volatile (loses data without power)","Identical in every way to secondary memory","Used only for backups"], correct:1, explain:"Primary memory (like RAM) offers high speed for active processing but usually loses data when powered off.", topic:"Memory Basics"},
+  {q:"SRAM is generally distinguished from DRAM because SRAM is:", options:["Slower and cheaper, needing constant refreshing","Faster and more expensive, and does not need constant refreshing","Identical to ROM","Used only in printers"], correct:1, explain:"SRAM retains data without the repeated refresh cycles DRAM requires, but at a higher cost.", topic:"RAM Types"},
+  {q:"The primary purpose of cache memory is to:", options:["Permanently store all user files","Store frequently used data close to the CPU to reduce wait time","Replace the need for RAM entirely","Connect the computer to the internet"], correct:1, explain:"Cache sits between the CPU and RAM, holding frequently accessed data for very fast retrieval.", topic:"Cache Memory"},
+  {q:"On a hard disk, a single concentric circular path used to store data is called a:", options:["Sector","Track","Platter","Cluster"], correct:1, explain:"A track is one of many concentric circles on a platter; each track is further divided into sectors.", topic:"Hard Disks"},
+  {q:"RAID primarily improves storage reliability and/or performance by:", options:["Using only one disk more efficiently","Combining multiple physical disks through techniques like striping and mirroring","Removing the need for any backup","Converting digital data into analog form"], correct:1, explain:"RAID spreads or duplicates data across multiple disks so the system can survive a single disk failure and/or run faster.", topic:"RAID"},
+  {q:"Optical disks such as CDs and DVDs store data using:", options:["Magnetic charges on a tape","Microscopic pits and flats read by a laser beam","Punched holes in paper","Electrical charge in transistors only"], correct:1, explain:"A laser detects differences in light reflection from pits/flats on the disc surface to read data.", topic:"Optical Storage"},
+  {q:"DVDs generally hold more data than CDs mainly because of:", options:["A larger physical size","Tighter track spacing and, often, multiple data layers","Being made of a different plastic colour","Using magnetic tape internally"], correct:1, explain:"DVDs pack tracks more tightly and can use multiple data layers, multiplying their storage capacity.", topic:"Optical Storage"},
+  {q:"Magnetic tape is most commonly used today for:", options:["Real-time gaming graphics","Backups and archiving large volumes of data sequentially","Running the operating system directly","Wireless data transmission"], correct:1, explain:"Tape's low cost per gigabyte makes it ideal for long-term backup and archival storage.", topic:"Magnetic Storage"},
+  {q:"An incremental backup copies:", options:["All data, every single time","Only the data changed since the very last backup of any type","Only data changed since the last full backup","Nothing — it is a type of virus"], correct:1, explain:"Incremental backups are the fastest and smallest because they only capture the newest changes.", topic:"Backup Systems"},
+  {q:"A full backup copies:", options:["Only changed files","All data in the system, every time it runs","Nothing unless triggered manually","Only system software, never user data"], correct:1, explain:"A full backup duplicates the entire dataset every time, making it the most complete but slowest method.", topic:"Backup Systems"},
+  {q:"In the basic Data Communication Model, the component that converts data into a transmittable signal is the:", options:["Source","Transmitter","Receiver","Destination"], correct:1, explain:"The transmitter encodes raw data into a signal suitable for the transmission medium.", topic:"Data Communication"},
+  {q:"Digital transmission is generally preferred over analog transmission mainly because it is:", options:["Always slower","More resistant to noise and signal degradation","Impossible to use over long distances","Only usable with magnetic tape"], correct:1, explain:"Digital signals (discrete 0s and 1s) hold up far better against interference than continuously varying analog signals.", topic:"Data Transmission"},
+  {q:"A modem's main function is to:", options:["Store backup data only","Convert digital signals to analog for transmission, and back to digital on arrival","Print hard copy documents","Scan barcodes"], correct:1, explain:"'Modem' stands for modulator-demodulator — converting between digital and analog forms for transmission lines.", topic:"Modems"},
+  {q:"Asynchronous transmission differs from synchronous transmission mainly because asynchronous transmission:", options:["Requires a shared timing clock between sender and receiver","Uses start/stop bits to frame each character instead of a shared clock","Can only be used wirelessly","Is always faster than synchronous transmission"], correct:1, explain:"Asynchronous transmission frames each character individually with start/stop bits, avoiding the need for synchronised clocks.", topic:"Transmission Modes"},
+  {q:"A walkie-talkie, where only one person can speak at a time while the other listens, illustrates which transmission mode?", options:["Simplex","Half Duplex","Full Duplex","Synchronous"], correct:1, explain:"Half duplex allows two-way communication, but only in one direction at any given moment.", topic:"Transmission Modes"}
+];
+renderMCQs("mcqContainer", chapter2MCQs, "ch2");
+ICT201.initSearch("mcqSearch", ".mcq-card");
+</script>
+</body>
+</html>

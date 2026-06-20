@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 1 Notes · Computer Fundamentals — INCT-201</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <span class="code">INCT-201</span>
+      <span class="title">Exam Companion</span>
+    </div>
+    <nav class="topnav">
+      <a href="../index.html">Home</a>
+      <a href="chapter-1.html" class="active">Notes</a>
+      <a href="../short-questions/chapter-1.html">Short Qs</a>
+      <a href="../long-questions/chapter-1.html">Long Qs</a>
+      <a href="../mcqs/chapter-1.html">MCQs</a>
+    </nav>
+    <button class="theme-toggle" aria-label="Toggle dark mode">☾</button>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">Home</a> / Chapter 01 / Notes</div>
+    <h1>Computer Fundamentals &amp; Computing Facilities</h1>
+    <p class="sub">Generations of computers, hardware &amp; software, types of computers, CBIS, and how computing facilities are organised.</p>
+
+    <div class="tabs">
+      <a href="chapter-1.html" class="active">Notes</a>
+      <a href="../short-questions/chapter-1.html">Short Questions</a>
+      <a href="../long-questions/chapter-1.html">Long Questions</a>
+      <a href="../mcqs/chapter-1.html">MCQs</a>
+    </div>
+    <div class="chapter-switch">
+      <a href="chapter-1.html" class="active">Chapter 1</a>
+      <a href="chapter-2.html">Chapter 2</a>
+      <a href="chapter-3.html">Chapter 3</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap content-shell">
+
+  <aside class="toc">
+    <div class="toc-label">On this page</div>
+    <ol>
+      <li><a href="#history">1. Brief History &amp; Generations</a></li>
+      <li><a href="#elements">2. Elements of a Computer</a></li>
+      <li><a href="#hw-sw">3. Hardware vs Software</a></li>
+      <li><a href="#app-sys">4. Application vs System Software</a></li>
+      <li><a href="#importance">5. Importance &amp; Limitations</a></li>
+      <li><a href="#types">6. Types of Computers</a></li>
+      <li><a href="#cbis">7. CBIS</a></li>
+      <li><a href="#methods">8. Methods of Input &amp; Processing</a></li>
+      <li><a href="#facility">9. Organising the Computing Facility</a></li>
+      <li><a href="#input-devices">10. Input Devices — Overview</a></li>
+    </ol>
+  </aside>
+
+  <main>
+
+    <div class="note-section" id="history">
+      <h2>1. Brief History of Computers <span class="tag">Four Generations</span></h2>
+      <p>A computer evolved from large, single-purpose calculating machines into the small, general-purpose devices we use today. Historians divide this evolution into four generations, each marked by a change in the core electronic component used to build the machine.</p>
+
+      <table class="compare">
+        <tr><th>Generation</th><th>Period</th><th>Core Technology</th><th>Key Trait</th></tr>
+        <tr><td>First</td><td>1940s–1950s</td><td>Vacuum tubes</td><td>Huge, hot, unreliable, used machine language</td></tr>
+        <tr><td>Second</td><td>1950s–1960s</td><td>Transistors</td><td>Smaller, faster, less heat, assembly language</td></tr>
+        <tr><td>Third</td><td>1960s–1970s</td><td>Integrated Circuits (ICs)</td><td>Multiple transistors on a chip, high-level languages</td></tr>
+        <tr><td>Fourth</td><td>1970s–present</td><td>Microprocessors</td><td>Entire CPU on one chip; birth of the personal computer</td></tr>
+      </table>
+
+      <div class="diagram-card">
+        <div class="diagram-label">Flowchart · Four Generations</div>
+        <svg viewBox="0 0 880 190" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="g-arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+              <path d="M0,0 L7,3 L0,6 Z" fill="var(--signal)"></path>
+            </marker>
+          </defs>
+          <line x1="200" y1="85" x2="236" y2="85" stroke="var(--signal)" stroke-width="2" marker-end="url(#g-arrow)"></line>
+          <line x1="420" y1="85" x2="456" y2="85" stroke="var(--signal)" stroke-width="2" marker-end="url(#g-arrow)"></line>
+          <line x1="640" y1="85" x2="676" y2="85" stroke="var(--signal)" stroke-width="2" marker-end="url(#g-arrow)"></line>
+
+          <rect x="20" y="30" width="180" height="110" rx="10" fill="var(--paper-dim)" stroke="var(--line)"></rect>
+          <circle cx="45" cy="55" r="14" fill="var(--signal)"></circle>
+          <text x="45" y="59" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">1</text>
+          <text x="110" y="78" text-anchor="middle" font-size="14" font-weight="700">Vacuum Tubes</text>
+          <text x="110" y="98" text-anchor="middle" font-size="12" class="dg-faint dg-mono">1940s–1950s</text>
+          <text x="110" y="120" text-anchor="middle" font-size="11" class="dg-faint">Huge · hot · unreliable</text>
+
+          <rect x="240" y="30" width="180" height="110" rx="10" fill="var(--paper-dim)" stroke="var(--line)"></rect>
+          <circle cx="265" cy="55" r="14" fill="var(--signal)"></circle>
+          <text x="265" y="59" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">2</text>
+          <text x="330" y="78" text-anchor="middle" font-size="14" font-weight="700">Transistors</text>
+          <text x="330" y="98" text-anchor="middle" font-size="12" class="dg-faint dg-mono">1950s–1960s</text>
+          <text x="330" y="120" text-anchor="middle" font-size="11" class="dg-faint">Smaller · cooler · faster</text>
+
+          <rect x="460" y="30" width="180" height="110" rx="10" fill="var(--paper-dim)" stroke="var(--line)"></rect>
+          <circle cx="485" cy="55" r="14" fill="var(--signal)"></circle>
+          <text x="485" y="59" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">3</text>
+          <text x="550" y="78" text-anchor="middle" font-size="14" font-weight="700">Integrated Circuits</text>
+          <text x="550" y="98" text-anchor="middle" font-size="12" class="dg-faint dg-mono">1960s–1970s</text>
+          <text x="550" y="120" text-anchor="middle" font-size="11" class="dg-faint">High-level languages</text>
+
+          <rect x="680" y="30" width="180" height="110" rx="10" fill="var(--signal-dim)" stroke="var(--signal)"></rect>
+          <circle cx="705" cy="55" r="14" fill="var(--amber)"></circle>
+          <text x="705" y="59" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">4</text>
+          <text x="770" y="78" text-anchor="middle" font-size="14" font-weight="700">Microprocessors</text>
+          <text x="770" y="98" text-anchor="middle" font-size="12" class="dg-faint dg-mono">1970s–present</text>
+          <text x="770" y="120" text-anchor="middle" font-size="11" class="dg-faint">Birth of the PC</text>
+        </svg>
+        <div class="diagram-caption">Each generation solved the previous one's size, heat, or speed problem.</div>
+      </div>
+
+      <div class="callout exam">
+        <strong>Examiner's Favourite</strong>
+        "Discuss the four generations of computers" is one of the most frequently repeated long questions. Always pair each generation with its core technology AND one limitation it solved from the previous generation.
+      </div>
+    </div>
+
+    <div class="note-section" id="elements">
+      <h2>2. Elements of a Computer System</h2>
+      <p>Every computer, regardless of size, is built from four functional elements that work together in a continuous cycle: Input → Processing → Output, supported by Storage.</p>
+      <ul>
+        <li><strong>Input:</strong> Devices and methods used to feed raw data into the computer (e.g. keyboard, mouse, scanner).</li>
+        <li><strong>Processor (CPU):</strong> The "brain" of the computer; made of the <em>Control Unit</em> (directs operations), the <em>Arithmetic &amp; Logic Unit — ALU</em> (performs calculations and comparisons), and <em>Registers</em> (tiny, ultra-fast storage inside the CPU).</li>
+        <li><strong>Memory:</strong> Primary memory (RAM/ROM) holds data and instructions the CPU is currently working on; secondary memory stores data permanently.</li>
+        <li><strong>Output:</strong> Devices that present processed data to the user (e.g. monitor, printer).</li>
+      </ul>
+
+      <div class="diagram-card">
+        <div class="diagram-label">Flowchart · The Information Processing Cycle</div>
+        <svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="ip-arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+              <path d="M0,0 L7,3 L0,6 Z" fill="var(--signal)"></path>
+            </marker>
+            <marker id="ip-arrow-rev" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto-start-reverse">
+              <path d="M0,0 L7,3 L0,6 Z" fill="var(--amber)"></path>
+            </marker>
+          </defs>
+
+          <line x1="180" y1="155" x2="276" y2="155" stroke="var(--signal)" stroke-width="2" marker-end="url(#ip-arrow)"></line>
+          <line x1="500" y1="155" x2="556" y2="155" stroke="var(--signal)" stroke-width="2" marker-end="url(#ip-arrow)"></line>
+          <line x1="390" y1="242" x2="390" y2="266" stroke="var(--amber)" stroke-width="2" marker-end="url(#ip-arrow)" marker-start="url(#ip-arrow-rev)"></line>
+
+          <rect x="20" y="110" width="160" height="90" rx="10" fill="var(--paper-dim)" stroke="var(--line)"></rect>
+          <text x="100" y="148" text-anchor="middle" font-size="14" font-weight="700">INPUT</text>
+          <text x="100" y="170" text-anchor="middle" font-size="11" class="dg-faint">Keyboard, Mouse, Scanner</text>
+
+          <rect x="280" y="70" width="220" height="170" rx="10" fill="var(--signal-dim)" stroke="var(--signal)" stroke-width="1.5"></rect>
+          <text x="390" y="108" text-anchor="middle" font-size="14" font-weight="700">PROCESS</text>
+          <text x="390" y="145" text-anchor="middle" font-size="11" class="dg-faint">CPU — Control Unit</text>
+          <text x="390" y="162" text-anchor="middle" font-size="11" class="dg-faint">+ ALU + Registers</text>
+          <text x="390" y="186" text-anchor="middle" font-size="11" class="dg-faint">Primary Memory (RAM / ROM)</text>
+
+          <rect x="560" y="110" width="160" height="90" rx="10" fill="var(--paper-dim)" stroke="var(--line)"></rect>
+          <text x="640" y="148" text-anchor="middle" font-size="14" font-weight="700">OUTPUT</text>
+          <text x="640" y="170" text-anchor="middle" font-size="11" class="dg-faint">Monitor, Printer</text>
+
+          <rect x="300" y="270" width="180" height="70" rx="10" fill="var(--amber-dim)" stroke="var(--amber)"></rect>
+          <text x="390" y="300" text-anchor="middle" font-size="13" font-weight="700">STORAGE</text>
+          <text x="390" y="320" text-anchor="middle" font-size="11" class="dg-faint">Secondary Memory — Hard Disk</text>
+        </svg>
+        <div class="diagram-caption">Input → Process → Output, with Storage feeding and receiving data from the CPU at every stage.</div>
+      </div>
+
+      <div class="callout">
+        <strong>Quick Recall</strong>
+        Input → Process (CPU + Memory) → Output, with Storage feeding and receiving data at every stage. This single diagram answers a large share of "basic concepts" MCQs.
+      </div>
+    </div>
+
+    <div class="note-section" id="hw-sw">
+      <h2>3. Hardware vs Software</h2>
+      <p><strong>Hardware</strong> is every physical, touchable part of a computer system — the CPU, monitor, keyboard, mouse, printer, circuit boards, and storage devices. Hardware cannot function meaningfully without instructions.</p>
+      <p><strong>Software</strong> is the set of instructions (programs) that tells the hardware what to do. It is intangible — you cannot touch software, only its storage medium.</p>
+      <table class="compare">
+        <tr><th>Aspect</th><th>Hardware</th><th>Software</th></tr>
+        <tr><td>Nature</td><td>Physical, tangible</td><td>Logical, intangible</td></tr>
+        <tr><td>Damage</td><td>Wears out / can break physically</td><td>Does not wear out; can develop "bugs"</td></tr>
+        <tr><td>Example</td><td>CPU, RAM, printer</td><td>Operating system, MS Word</td></tr>
+      </table>
+    </div>
+
+    <div class="note-section" id="app-sys">
+      <h2>4. Application Software vs System Software</h2>
+      <h3>System Software</h3>
+      <p>Manages and controls the computer's own hardware and resources so that application software can run. Example: Operating Systems (Windows, Linux), device drivers, utility programs.</p>
+      <h3>Application Software</h3>
+      <p>Designed for the end-user to perform specific tasks — word processing, spreadsheets, browsing, gaming.</p>
+      <h3>Uses of Application Software</h3>
+      <ul>
+        <li>Automates routine office tasks (typing, calculations, presentations).</li>
+        <li>Supports communication, research, and data analysis.</li>
+        <li>Provides entertainment and creative tools.</li>
+      </ul>
+      <h3>Limitations of Application Software</h3>
+      <ul>
+        <li>Depends entirely on compatible system software/hardware to run.</li>
+        <li>General-purpose packages may not fit highly specialised needs.</li>
+        <li>Requires updates and can carry security vulnerabilities.</li>
+      </ul>
+    </div>
+
+    <div class="note-section" id="importance">
+      <h2>5. Importance &amp; Limitations of Computers</h2>
+      <p>Computers are valued for <strong>speed</strong> (millions of operations per second), <strong>accuracy</strong> (near-zero error when correctly programmed), <strong>storage capacity</strong>, and the ability to perform <strong>repetitive tasks</strong> without fatigue. They have transformed education, business, communication, medicine, and research.</p>
+      <p>Their main limitation is that they have <strong>no judgement or common sense</strong> — they only do exactly what they are instructed to do (the "Garbage In, Garbage Out" principle), and they depend completely on electricity and correct programming.</p>
+    </div>
+
+    <div class="note-section" id="types">
+      <h2>6. Types of Computers <span class="tag">by Size &amp; Capacity</span></h2>
+      <table class="compare">
+        <tr><th>Type</th><th>Typical Use</th><th>Key Trait</th></tr>
+        <tr><td>Supercomputer</td><td>Weather forecasting, nuclear research, simulations</td><td>Fastest, most powerful; massively parallel processing</td></tr>
+        <tr><td>Mainframe</td><td>Banks, airlines, large organisations</td><td>Serves hundreds/thousands of users at once; very reliable</td></tr>
+        <tr><td>Minicomputer</td><td>Mid-sized businesses, departments</td><td>Smaller than mainframe, supports multiple users</td></tr>
+        <tr><td>Microcomputer</td><td>Homes, offices (PCs, laptops)</td><td>Single CPU chip; built for one user at a time</td></tr>
+      </table>
+      <div class="callout exam">
+        <strong>Examiner's Favourite</strong>
+        Don't just list the four types — examiners reward answers that compare them by <em>processing power, number of simultaneous users,</em> and a <em>real-world example</em> for each.
+      </div>
+    </div>
+
+    <div class="note-section" id="cbis">
+      <h2>7. Computer Based Information System (CBIS)</h2>
+      <p>A CBIS uses computer technology to carry out some or all of an organisation's information processing. It is more than just hardware and software — it is a complete system of five components working together to convert data into useful information.</p>
+      <ul>
+        <li><strong>Hardware</strong> — physical devices that process and store data.</li>
+        <li><strong>Software</strong> — programs that direct the hardware.</li>
+        <li><strong>Data</strong> — raw facts that the system processes into information.</li>
+        <li><strong>People</strong> — users and IT staff who operate and manage the system.</li>
+      </ul>
+
+      <div class="diagram-card">
+        <div class="diagram-label">Mind Map · The 5 Components of CBIS</div>
+        <svg viewBox="0 0 700 470" xmlns="http://www.w3.org/2000/svg">
+          <line x1="350" y1="250" x2="350" y2="90" stroke="var(--line)" stroke-width="2"></line>
+          <line x1="350" y1="250" x2="500" y2="205" stroke="var(--line)" stroke-width="2"></line>
+          <line x1="350" y1="250" x2="445" y2="375" stroke="var(--line)" stroke-width="2"></line>
+          <line x1="350" y1="250" x2="255" y2="375" stroke="var(--line)" stroke-width="2"></line>
+          <line x1="350" y1="250" x2="200" y2="205" stroke="var(--line)" stroke-width="2"></line>
+
+          <circle cx="350" cy="250" r="62" fill="var(--ink)"></circle>
+          <text x="350" y="245" text-anchor="middle" font-size="17" font-weight="700" fill="var(--paper)">CBIS</text>
+          <text x="350" y="265" text-anchor="middle" font-size="9.5" fill="var(--paper)" opacity=".75">5 Components</text>
+
+          <circle cx="350" cy="70" r="58" fill="var(--signal)"></circle>
+          <text x="350" y="66" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Hardware</text>
+          <text x="350" y="84" text-anchor="middle" font-size="9.5" fill="#fff" opacity=".85">Physical devices</text>
+
+          <circle cx="521" cy="194" r="58" fill="var(--signal)"></circle>
+          <text x="521" y="190" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Software</text>
+          <text x="521" y="208" text-anchor="middle" font-size="9.5" fill="#fff" opacity=".85">Programs</text>
+
+          <circle cx="456" cy="396" r="58" fill="var(--amber)"></circle>
+          <text x="456" y="392" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Data</text>
+          <text x="456" y="410" text-anchor="middle" font-size="9.5" fill="#fff" opacity=".85">Raw facts</text>
+
+          <circle cx="244" cy="396" r="58" fill="var(--amber)"></circle>
+          <text x="244" y="392" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">People</text>
+          <text x="244" y="410" text-anchor="middle" font-size="9.5" fill="#fff" opacity=".85">Users &amp; IT staff</text>
+
+          <circle cx="179" cy="194" r="58" fill="var(--signal)"></circle>
+          <text x="179" y="190" text-anchor="middle" font-size="13.5" font-weight="700" fill="#fff">Procedures</text>
+          <text x="179" y="208" text-anchor="middle" font-size="9.5" fill="#fff" opacity=".85">Rules &amp; methods</text>
+        </svg>
+        <div class="diagram-caption">All five components must work together — remove one, and the system fails in practice.</div>
+      </div>
+    </div>
+
+    <div class="note-section" id="methods">
+      <h2>8. Methods of Input &amp; Processing</h2>
+      <p>Organisations choose how data enters a system and when it is processed:</p>
+      <ul>
+        <li><strong>Keyboard entry</strong> — manual typing; flexible but slower and error-prone.</li>
+        <li><strong>Source Data Automation (SDA)</strong> — data is captured directly from its origin using devices like barcode readers or OCR, reducing transcription errors.</li>
+        <li><strong>Batch Processing</strong> — data is collected over a period and processed together at a scheduled time (e.g. monthly payroll).</li>
+        <li><strong>Online / Real-time Processing</strong> — data is processed immediately as it is entered (e.g. ATM withdrawal, airline booking).</li>
+      </ul>
+    </div>
+
+    <div class="note-section" id="facility">
+      <h2>9. Organising the Computing Facility</h2>
+      <p>How an organisation arranges its computers and processing power falls into three broad models:</p>
+      <table class="compare">
+        <tr><th>Model</th><th>Description</th><th>Trade-off</th></tr>
+        <tr><td>Centralized</td><td>All processing power and data are kept on one large central computer; users connect via terminals.</td><td>Easy to control &amp; secure, but a single point of failure and can bottleneck under heavy load.</td></tr>
+        <tr><td>Distributed</td><td>Processing is spread across multiple connected computers that cooperate and share data, often across locations.</td><td>Flexible and resilient, but harder to coordinate and secure.</td></tr>
+        <tr><td>Decentralized</td><td>Each department/location has its own independent computer with little or no central coordination.</td><td>Maximum local control, but duplicated effort and inconsistent data.</td></tr>
+      </table>
+
+      <div class="diagram-card">
+        <div class="diagram-label">Diagram · Centralized vs Distributed vs Decentralized</div>
+        <svg viewBox="0 0 920 260" xmlns="http://www.w3.org/2000/svg">
+          <line x1="310" y1="20" x2="310" y2="210" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="4 5"></line>
+          <line x1="610" y1="20" x2="610" y2="210" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="4 5"></line>
+
+          <!-- Centralized: hub and spoke -->
+          <line x1="150" y1="120" x2="80" y2="60" stroke="var(--mist)" stroke-width="1.5"></line>
+          <line x1="150" y1="120" x2="220" y2="60" stroke="var(--mist)" stroke-width="1.5"></line>
+          <line x1="150" y1="120" x2="80" y2="180" stroke="var(--mist)" stroke-width="1.5"></line>
+          <line x1="150" y1="120" x2="220" y2="180" stroke="var(--mist)" stroke-width="1.5"></line>
+          <circle cx="80" cy="60" r="12" fill="var(--paper-dim)" stroke="var(--line)"></circle>
+          <circle cx="220" cy="60" r="12" fill="var(--paper-dim)" stroke="var(--line)"></circle>
+          <circle cx="80" cy="180" r="12" fill="var(--paper-dim)" stroke="var(--line)"></circle>
+          <circle cx="220" cy="180" r="12" fill="var(--paper-dim)" stroke="var(--line)"></circle>
+          <circle cx="150" cy="120" r="24" fill="var(--ink)"></circle>
+          <text x="150" y="125" text-anchor="middle" font-size="10" font-weight="700" fill="var(--paper)">MAIN</text>
+          <text x="150" y="234" text-anchor="middle" font-size="13" font-weight="700">CENTRALIZED</text>
+          <text x="150" y="250" text-anchor="middle" font-size="10" class="dg-faint">One main computer, many terminals</text>
+
+          <!-- Distributed: mesh -->
+          <line x1="390" y1="60" x2="530" y2="60" stroke="var(--signal)" stroke-width="1.5"></line>
+          <line x1="390" y1="60" x2="390" y2="180" stroke="var(--signal)" stroke-width="1.5"></line>
+          <line x1="390" y1="60" x2="530" y2="180" stroke="var(--signal)" stroke-width="1.5"></line>
+          <line x1="530" y1="60" x2="390" y2="180" stroke="var(--signal)" stroke-width="1.5"></line>
+          <line x1="530" y1="60" x2="530" y2="180" stroke="var(--signal)" stroke-width="1.5"></line>
+          <line x1="390" y1="180" x2="530" y2="180" stroke="var(--signal)" stroke-width="1.5"></line>
+          <circle cx="390" cy="60" r="15" fill="var(--signal)"></circle>
+          <circle cx="530" cy="60" r="15" fill="var(--signal)"></circle>
+          <circle cx="390" cy="180" r="15" fill="var(--signal)"></circle>
+          <circle cx="530" cy="180" r="15" fill="var(--signal)"></circle>
+          <text x="460" y="234" text-anchor="middle" font-size="13" font-weight="700">DISTRIBUTED</text>
+          <text x="460" y="250" text-anchor="middle" font-size="10" class="dg-faint">Many computers cooperate &amp; share data</text>
+
+          <!-- Decentralized: isolated nodes -->
+          <circle cx="700" cy="70" r="15" fill="var(--amber)"></circle>
+          <circle cx="700" cy="170" r="15" fill="var(--amber)"></circle>
+          <circle cx="840" cy="120" r="15" fill="var(--amber)"></circle>
+          <text x="700" y="44" text-anchor="middle" font-size="9.5" class="dg-faint">Dept A</text>
+          <text x="700" y="196" text-anchor="middle" font-size="9.5" class="dg-faint">Dept B</text>
+          <text x="840" y="146" text-anchor="middle" font-size="9.5" class="dg-faint">Dept C</text>
+          <text x="770" y="234" text-anchor="middle" font-size="13" font-weight="700">DECENTRALIZED</text>
+          <text x="770" y="250" text-anchor="middle" font-size="10" class="dg-faint">Independent, uncoordinated systems</text>
+        </svg>
+        <div class="diagram-caption">Notice how connections (or the lack of them) define each model's trade-off.</div>
+      </div>
+
+      <div class="callout">
+        <strong>Memory Hook</strong>
+        Centralized = one brain, many hands. Distributed = many brains, one team. Decentralized = many brains, no team.
+      </div>
+    </div>
+
+    <div class="note-section" id="input-devices">
+      <h2>10. Input Devices — Overview</h2>
+      <p>Input devices are the gateway through which raw data enters a computer system. They range from manual devices like the <strong>keyboard</strong> to automated capture tools used in Source Data Automation. The detailed types — keyboards, terminals, pointing devices, voice input, and SDA technologies — are covered fully in <a href="chapter-2.html">Chapter 2: I/O Devices, Storage &amp; Data Communication</a>, since they connect directly to how data is processed and stored.</p>
+    </div>
+
+    <hr class="div">
+    <p style="text-align:center;"><a href="../mcqs/chapter-1.html" class="btn primary">Test yourself → Chapter 1 MCQs</a></p>
+
+  </main>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>INCT-201 · Applications of ICT · Chapter 1 of 3</div>
+    <div><a href="chapter-2.html">Next: Chapter 2 Notes →</a></div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>document.addEventListener("DOMContentLoaded", () => ICT201.markNotesVisited("ch1"));</script>
+</body>
+</html>
